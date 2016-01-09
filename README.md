@@ -1,7 +1,8 @@
 tweetcatcher.py
 ---
-Interactive Twitter client for the REST API that makes use of the [Twython library](https://github.com/ryanmcgrath/twython). It knows about the [entire REST API surface](https://gist.github.com/withtwoemms/54ea3e7e389703640f9d) by scraping the docs and caching the info in a convenient format. Does the same with [rate limits](https://gist.github.com/withtwoemms/e5c80f9eed0d3f8b9e4a). It's meant to be used in your favorite Python interactive shell (bpython, ipython, python, etc.). Below are
-some notes on usage:
+This is an interactive Twitter client for the REST API that makes use of the [Twython library](https://github.com/ryanmcgrath/twython). It knows about the [entire REST API surface](https://gist.github.com/withtwoemms/54ea3e7e389703640f9d) from scraping the docs and caching the info in a convenient data structure. Does the same with [rate limits](https://gist.github.com/withtwoemms/e5c80f9eed0d3f8b9e4a). It's meant to be used in your favorite Python interactive shell (bpython, ipython, python, etc.). Below are some notes on usage:
+
+> go to [this webpage](http://emmanuelobi.com/tweetcatcher.html) and generate a url that will lead you to an authentication pin necessary to retrieve your access tokens.
 
 ```python
 >>> from tweetcatcher import TweetCatcher
