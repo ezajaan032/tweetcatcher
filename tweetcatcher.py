@@ -8,16 +8,9 @@ from lxml import html
 from twython import Twython
 
 
-#-- APP CREDENTIALS -------------------------------->>>
-filepath = "{}/.twitter_credentials".format(os.path.expanduser('~'))
-with open(filepath, "r") as cred_file:
-    APP_KEY, APP_SECRET = cred_file.read().splitlines()
-#--------------------------------------------------->>>
-
-
 class TweetCatcher():
     def __init__(self):
-        app_creds = Twython(APP_KEY, APP_SECRET).get_authentication_tokens()
+        self.app_creds = Twython(APP_KEY, APP_SECRET).get_authentication_tokens()
         self.client = self.gen_client()
         self.get_api_dict()
 
