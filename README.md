@@ -21,3 +21,4 @@ max_id =
 ```
 
 All you need to do is pass the endpoint name to the TweetCatcher#catch method and this implementation handles the rest. If there are params to be specified, they will pop up sequentially. Enter values if you'd like, otherwise they will be logged as having a value of `None`. Currently, I am the only one with app keys, but I will make an interface for serving access tokens so that others can use it. Going to deal with pagination and exporting data in the future.
+
